@@ -24,7 +24,7 @@ public class MP3Recorder {
     /**
      * 以下三项为默认配置参数。Google Android文档明确表明只有以下3个参数是可以在所有设备上保证支持的。
      */
-    private static final int DEFAULT_SAMPLING_RATE = 44100;//模拟器仅支持从麦克风输入8kHz采样率
+    private static final int DEFAULT_SAMPLING_RATE = 16000;//模拟器仅支持从麦克风输入8kHz采样率
     private static final int DEFAULT_CHANNEL_CONFIG = AudioFormat.CHANNEL_IN_MONO;
     /**
      * 下面是对此的封装
@@ -33,15 +33,15 @@ public class MP3Recorder {
     private static final PCMFormat DEFAULT_AUDIO_FORMAT = PCMFormat.PCM_16BIT;
 
     //======================Lame Default Settings=====================
-    private static final int DEFAULT_LAME_MP3_QUALITY = 4;
+    private static final int DEFAULT_LAME_MP3_QUALITY = 2;
     /**
      * 与DEFAULT_CHANNEL_CONFIG相关，因为是mono单声，所以是1
      */
     private static final int DEFAULT_LAME_IN_CHANNEL = 1;
     /**
-     * Encoded bit rate. MP3 file will be encoded with bit rate 32kbps
+     * Encoded bit rate. MP3 file will be encoded with bit rate 64kbps
      */
-    private static final int DEFAULT_LAME_MP3_BIT_RATE = 32;
+    private static final int DEFAULT_LAME_MP3_BIT_RATE = 64;
 
     //==================================================================
 

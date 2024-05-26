@@ -1,9 +1,5 @@
 //
 //  Recorder.m
-//  NewGS
-//
-//  Created by newgs on 16/5/25.
-//  Copyright © 2016年 cnmobi. All rights reserved.
 
 #import "Recorder.h"
 #import <AVFoundation/AVFoundation.h>

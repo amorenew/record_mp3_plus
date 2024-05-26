@@ -1,0 +1,53 @@
+PODS:
+  - audioplayers_darwin (0.0.1):
+    - FlutterMacOS
+  - flutter_desktop_audio_recorder (0.0.1):
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+  - package_info (0.0.1):
+    - FlutterMacOS
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (0.0.1):
+    - FlutterMacOS
+  - record_mp3 (0.0.1):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - audioplayers_darwin (from `Flutter/ephemeral/.symlinks/plugins/audioplayers_darwin/macos`)
+  - flutter_desktop_audio_recorder (from `Flutter/ephemeral/.symlinks/plugins/flutter_desktop_audio_recorder/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - package_info (from `Flutter/ephemeral/.symlinks/plugins/package_info/macos`)
+  - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin`)
+  - permission_handler_apple (from `Flutter/ephemeral/.symlinks/plugins/permission_handler_apple/macos`)
+  - record_mp3 (from `Flutter/ephemeral/.symlinks/plugins/record_mp3/macos`)
+
+EXTERNAL SOURCES:
+  audioplayers_darwin:
+    :path: Flutter/ephemeral/.symlinks/plugins/audioplayers_darwin/macos
+  flutter_desktop_audio_recorder:
+    :path: Flutter/ephemeral/.symlinks/plugins/flutter_desktop_audio_recorder/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  package_info:
+    :path: Flutter/ephemeral/.symlinks/plugins/package_info/macos
+  path_provider_foundation:
+    :path: Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin
+  permission_handler_apple:
+    :path: Flutter/ephemeral/.symlinks/plugins/permission_handler_apple/macos
+  record_mp3:
+    :path: Flutter/ephemeral/.symlinks/plugins/record_mp3/macos
+
+SPEC CHECKSUMS:
+  audioplayers_darwin: dcad41de4fbd0099cb3749f7ab3b0cb8f70b810c
+  flutter_desktop_audio_recorder: 508312da1e1033e5a6365dc473d4142d1dc18da0
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  package_info: 6eba2fd8d3371dda2d85c8db6fe97488f24b74b2
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  permission_handler_apple: fa7012038b5aa4ed34436aa5aa4e943f94b32417
+  record_mp3: ad572b83dea81f4024c7ed317aec4ee16dafc5d0
+
+PODFILE CHECKSUM: 844f3bcc61834658b171b4afca91e01479aa65d2
+
+COCOAPODS: 1.15.2
