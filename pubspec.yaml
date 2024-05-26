@@ -1,8 +1,7 @@
-name: record_mp3
+name: record_mp3_plus
 description: Record an MP3 using the Platform native API，You can start ,pause,resume and stop record,And export an MP3 file.
 version: 1.0.0
 homepage: https://github.com/amorenew/record_mp3_plus
-publish_to: https://pub.dev
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
