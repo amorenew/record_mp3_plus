@@ -4,8 +4,8 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.0.0"
-  flutter: ">=3.16.0"
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.16.0'
 
 dependencies:
   flutter:
@@ -17,7 +17,6 @@ dependencies:
   flutter_desktop_audio_recorder: ^0.0.1
   record_mp3_plus:
     path: ../
-
 
 dependency_overrides:
   # https://github.com/Baseflow/flutter-permission-handler/pull/1207
@@ -33,12 +32,9 @@ dependency_overrides:
       path: permission_handler_apple
       ref: master
 
-
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
   uses-material-design: true
-
