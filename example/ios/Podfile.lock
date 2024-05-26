@@ -2,46 +2,40 @@ PODS:
   - audioplayers_darwin (0.0.1):
     - Flutter
   - Flutter (1.0.0)
-  - package_info (0.0.1):
-    - Flutter
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
   - permission_handler_apple (9.1.1):
     - Flutter
-  - record_mp3 (0.0.1):
+  - record_mp3_plus (0.0.1):
     - Flutter
 
 DEPENDENCIES:
   - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/ios`)
   - Flutter (from `Flutter`)
-  - package_info (from `.symlinks/plugins/package_info/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
-  - record_mp3 (from `.symlinks/plugins/record_mp3/ios`)
+  - record_mp3_plus (from `.symlinks/plugins/record_mp3_plus/ios`)
 
 EXTERNAL SOURCES:
   audioplayers_darwin:
     :path: ".symlinks/plugins/audioplayers_darwin/ios"
   Flutter:
     :path: Flutter
-  package_info:
-    :path: ".symlinks/plugins/package_info/ios"
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
   permission_handler_apple:
     :path: ".symlinks/plugins/permission_handler_apple/ios"
-  record_mp3:
-    :path: ".symlinks/plugins/record_mp3/ios"
+  record_mp3_plus:
+    :path: ".symlinks/plugins/record_mp3_plus/ios"
 
 SPEC CHECKSUMS:
   audioplayers_darwin: 877d9a4d06331c5c374595e46e16453ac7eafa40
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
   permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
-  record_mp3: b842d3900f65a0707e4064d9bcfac6323dea0b4f
+  record_mp3_plus: 95707b4f793bd88f3e0f7da7d6f6bb9e4b251ffe
 
-PODFILE CHECKSUM: 870f5deedc23d3e7b3370462551ee9ef3deacc3b
+PODFILE CHECKSUM: 9cd29f0f9e8916ba58a17200ab268c859edec191
 
 COCOAPODS: 1.15.2

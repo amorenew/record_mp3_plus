@@ -1,4 +1,4 @@
-package com.plugin.record_mp3.record;
+package com.plugin.record_mp3_plus.record;
 
 import android.media.AudioRecord;
 import android.os.Handler;
@@ -7,7 +7,7 @@ import android.os.Message;
 import android.util.Log;
 
 import com.czt.mp3recorder.util.LameUtil;
-import com.plugin.record_mp3.record.port.RecordListener;
+import com.plugin.record_mp3_plus.record.port.RecordListener;
 
 import java.io.File;
 import java.io.FileNotFoundException;

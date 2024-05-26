@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "flutter_record_mp3",
+            "name": "flutter_record_mp3_plus",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "flutter_record_mp3 (profile mode)",
+            "name": "flutter_record_mp3_plus (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "flutter_record_mp3 (release mode)",
+            "name": "flutter_record_mp3_plus (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

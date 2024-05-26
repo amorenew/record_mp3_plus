@@ -1,4 +1,4 @@
-package com.plugin.record_mp3.record;
+package com.plugin.record_mp3_plus.record;
 
 /**
  * Created by hujie on 16/5/24.

@@ -9,7 +9,7 @@ public class SwiftRecordMp3Plugin: NSObject, FlutterPlugin {
     // Initialize the plugin with the registrar
     public  init(registrar: FlutterPluginRegistrar) {
         super.init()
-        methodChannel = FlutterMethodChannel(name: "record_mp3", binaryMessenger: registrar.messenger)
+        methodChannel = FlutterMethodChannel(name: "record_mp3_plus", binaryMessenger: registrar.messenger)
         
         registrar.addMethodCallDelegate(self, channel: methodChannel!)
         

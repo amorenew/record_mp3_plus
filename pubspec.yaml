@@ -4,8 +4,8 @@ version: 1.0.0
 homepage: https://github.com/amorenew/record_mp3_plus
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
-  flutter: '>=3.16.0 <4.0.0'
+  sdk: '>=3.0.0'
+  flutter: '>=3.16.0'
 
 dependencies:
   flutter:
@@ -19,7 +19,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.plugin.record_mp3
+        package: com.plugin.record_mp3_plus
         pluginClass: RecordMp3Plugin
       ios:
         pluginClass: RecordMp3Plugin

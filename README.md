@@ -11,6 +11,8 @@ dependencies:
   record_mp3_plus: check latest on pub.dev
 ```
 
+###### On iOS Simulator use Headphone to record otherwise you may not able to hear your recording
+ 
 ## Usage
  
 1- Add microphone permission, check the permission sections
@@ -44,6 +46,7 @@ bool isStopped = RecordMp3.instance.stop();
 ```
  
 ### iOS or macOS
+
 Make sure you add the following key to Info.plist for iOS
 ```
 <key>NSMicrophoneUsageDescription</key>
@@ -51,8 +54,10 @@ Make sure you add the following key to Info.plist for iOS
 ```
 and if you will use permission_handler library go to Podfile
 and after `flutter_additional_ios_build_settings` add the following
+Note: I added EXCLUDED_ARCHS to make it work on macOS intel devices
 ``` 
  target.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "x86_64"
     config.build_settings["GCC_PREPROCESSOR_DEFINITIONS"] ||= [
        "$(inherited)",
 

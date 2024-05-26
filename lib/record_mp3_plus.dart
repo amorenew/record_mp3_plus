@@ -17,7 +17,7 @@ class RecordMp3 {
   Function(RecordErrorType)? _onRecordError;
 
   RecordMp3._() {
-    _channel = const MethodChannel('record_mp3');
+    _channel = const MethodChannel('record_mp3_plus');
     _channel.setMethodCallHandler(_methodCallHandler);
   }
 

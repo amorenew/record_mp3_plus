@@ -1,11 +1,11 @@
 name: record_mp3_example
-description: Demonstrates how to use the record_mp3 plugin.
+description: Demonstrates how to use the record_mp3_plus plugin.
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
-  flutter: ">=3.16.0 <4.0.0"
+  sdk: ">=3.0.0"
+  flutter: ">=3.16.0"
 
 dependencies:
   flutter:

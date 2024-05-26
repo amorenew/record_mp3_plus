@@ -1,9 +1,9 @@
-package com.plugin.record_mp3;
+package com.plugin.record_mp3_plus;
 
-import com.plugin.record_mp3.record.MP3Recorder;
-import com.plugin.record_mp3.record.RecordMsg;
-import com.plugin.record_mp3.record.RecordStatus;
-import com.plugin.record_mp3.record.port.RecordListener;
+import com.plugin.record_mp3_plus.record.MP3Recorder;
+import com.plugin.record_mp3_plus.record.RecordMsg;
+import com.plugin.record_mp3_plus.record.RecordStatus;
+import com.plugin.record_mp3_plus.record.port.RecordListener;
 
 import java.io.File;
 
@@ -54,7 +54,7 @@ public class RecordMp3Plugin implements MethodCallHandler, FlutterPlugin {
     }
 
     private void init(BinaryMessenger messenger) {
-        methodChannel = new MethodChannel(messenger, "record_mp3");
+        methodChannel = new MethodChannel(messenger, "record_mp3_plus");
         methodChannel.setMethodCallHandler(this);
 
         this.listener = new RecordListener() {
