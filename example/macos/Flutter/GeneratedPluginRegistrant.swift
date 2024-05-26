@@ -9,7 +9,7 @@ import audioplayers_darwin
 import flutter_desktop_audio_recorder
 import path_provider_foundation
 import permission_handler_apple
-import record_mp3
+import record_mp3_plus
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   AudioplayersDarwinPlugin.register(with: registry.registrar(forPlugin: "AudioplayersDarwinPlugin"))

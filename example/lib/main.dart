@@ -3,7 +3,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:path_provider/path_provider.dart';
-import 'package:record_mp3/record_mp3.dart';
+import 'package:record_mp3_plus/record_mp3_plus.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 void main() => runApp(MyApp());

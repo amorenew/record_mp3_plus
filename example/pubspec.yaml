@@ -15,7 +15,7 @@ dependencies:
   permission_handler: ^11.3.1
   audioplayers: ^6.0.0
   flutter_desktop_audio_recorder: ^0.0.1
-  record_mp3:
+  record_mp3_plus:
     path: ../
 
 

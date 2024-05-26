@@ -1,10 +1,10 @@
 # record_mp3_example
 
-Demonstrates how to use the record_mp3 plugin.
+Demonstrates how to use the record_mp3_plus plugin.
 
  ### Example
 ```
-import 'package:record_mp3/record_mp3.dart';
+import 'package:record_mp3_plus/record_mp3_plus.dart';
 
 //start record 
 RecordMp3.instance.start(recordFilePath, (type) {

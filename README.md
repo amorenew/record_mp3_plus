@@ -67,7 +67,7 @@ check the example pubspec.yaml
 
 ### Example
 ```
-import 'package:record_mp3/record_mp3.dart';
+import 'package:record_mp3_plus/record_mp3_plus.dart';
 
 //start record 
 RecordMp3.instance.start(recordFilePath, (type) {
