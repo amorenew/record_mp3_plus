@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'record_mp3_plus'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
   s.summary          = 'A new Flutter plugin.'
   s.description      = <<-DESC
 A new Flutter plugin.

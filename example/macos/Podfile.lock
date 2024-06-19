@@ -9,7 +9,7 @@ PODS:
     - FlutterMacOS
   - permission_handler_apple (0.0.1):
     - FlutterMacOS
-  - record_mp3_plus (0.0.1):
+  - record_mp3_plus (1.0.0):
     - FlutterMacOS
 
 DEPENDENCIES:
@@ -40,8 +40,8 @@ SPEC CHECKSUMS:
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
   permission_handler_apple: fa7012038b5aa4ed34436aa5aa4e943f94b32417
-  record_mp3_plus: 2a0fcad494aa51e8c1fbff14addeea475e40201d
+  record_mp3_plus: 810438ba1dcd55860266b7d5aabc5616491d5fd8
 
-PODFILE CHECKSUM: 844f3bcc61834658b171b4afca91e01479aa65d2
+PODFILE CHECKSUM: 4cbcb106970718f13a757a4a932f2b75a8337aed
 
 COCOAPODS: 1.15.2
