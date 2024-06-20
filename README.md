@@ -1,14 +1,14 @@
 # Record Mp3
-[![pub package](https://img.shields.io/pub/v/record_mp3.svg)](https://pub.dartlang.org/packages/record_mp3_plus)
+[![pub package](https://img.shields.io/pub/v/record_mp3_plus.svg)](https://pub.dartlang.org/packages/record_mp3_plus)
 
-##### Record an MP3 using the platform native API
-##### I made this plugin as record_mp3 is not maintained since long time and it doesn't work on iOS simulator 
+##### Record an MP3 using the platform's native API
+##### I made this plugin as record_mp3 is not maintained for a long time and it doesn't work on the iOS simulator 
 ## Depend on it
 Add this to your package's pubspec.yaml file:
 
 ```
 dependencies:
-  record_mp3_plus: check latest on pub.dev
+  record_mp3_plus: check the latest on pub.dev
 ```
 
 ###### On iOS Simulator use Headphone to record otherwise you may not able to hear your recording
@@ -54,7 +54,7 @@ Make sure you add the following key to Info.plist for iOS
 ```
 and if you will use permission_handler library go to Podfile
 and after `flutter_additional_ios_build_settings` add the following
-Note: I added EXCLUDED_ARCHS to make it work on macOS intel devices
+Note: I added EXCLUDED_ARCHS to make it work on macOS Intel devices
 ``` 
  target.build_configurations.each do |config|
     config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "x86_64"
@@ -67,7 +67,7 @@ Note: I added EXCLUDED_ARCHS to make it work on macOS intel devices
  end
 ```
 for macOS permission_handler doesn't support macOS yet so I used 
-`dependency_overrides` which allow me to use an open PR with macOS support
+`dependency_overrides` which allows me to use an open PR with macOS support
 check the example pubspec.yaml
 
 ### Example
