@@ -4,6 +4,7 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         google()
+        mavenCentral()
         flatDir {
             dirs 'libs'
         }
@@ -17,6 +18,7 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
+        mavenCentral()
         flatDir {
             dirs 'libs'
         }
