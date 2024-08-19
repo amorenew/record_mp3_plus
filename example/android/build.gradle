@@ -1,7 +1,10 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
     }
 
     dependencies {
@@ -12,7 +15,10 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
