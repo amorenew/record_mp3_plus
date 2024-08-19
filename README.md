@@ -3,6 +3,7 @@
 
 ##### Record an MP3 using the platform's native API
 ##### I made this plugin as record_mp3 is not maintained for a long time and it doesn't work on the iOS simulator 
+
 ## Depend on it
 Add this to your package's pubspec.yaml file:
 
@@ -44,6 +45,51 @@ bool isStopped = RecordMp3.instance.stop();
       statusText = "Record complete";
    }
 ```
+
+### Android
+
+Since JCenter repository is shutdown, but the Android dependency `com.czt.mp3recorder:library:1.0.4` is not migrated to mavenCentral, so it's not compilable any more. See issue https://github.com/amorenew/record_mp3_plus/issues/2
+
+Now the AAR library has been embedded into this project, but additional steps are needed due to gradle not allowing AAR embedded in another AAR library.
+
+- Download `record_mp3_plus/android/libs/com.czt.mp3recorder_library_1.0.4.aar` from this Github project into your local machine
+- In your local machine, put the AAR file into your own app project `flutter_project/android/app/libs/com.czt.mp3recorder_library_1.0.4.aar`
+- Open gradle file from your own app project `flutter_project/android/build.gradle`, add this line to `repositories` in 2 places:
+
+```
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        flatDir { // <-- Add this part
+            dirs 'libs' 
+        }
+    }
+    ...
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        flatDir { // <-- Add this part
+            dirs 'libs'
+        }
+    }
+}
+...
+```
+
+- Open gradle file your own app project `flutter_project/android/app/build.gradle`, add this line to `dependencies`:
+
+```
+dependencies {
+...
+    implementation files('libs/com.czt.mp3recorder_library_1.0.4.aar')
+}
+```
+
+If not clear, see this Github project's example in `record_mp3_plus/example/android`
  
 ### iOS or macOS
 
