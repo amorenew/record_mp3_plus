@@ -4,7 +4,9 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         google()
-        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
     }
 
     dependencies {
@@ -15,7 +17,9 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
@@ -35,5 +39,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.czt.mp3recorder:library:1.0.4'
+    // Import library as compile only, you will also need to import it into your runnable app project as `implementation files('libs/com.czt.mp3recorder_library_1.0.4.aar')`
+    compileOnly files('libs/com.czt.mp3recorder_library_1.0.4.aar')
 }
