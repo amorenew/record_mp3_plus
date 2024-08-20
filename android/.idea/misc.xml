@@ -91,7 +91,4 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-  <component name="RenderSettings">
-    <option name="quality" value="0.44" />
-  </component>
 </project>
