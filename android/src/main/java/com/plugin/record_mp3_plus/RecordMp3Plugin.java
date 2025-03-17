@@ -14,7 +14,6 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /**
  * RecordMp3Plugin
@@ -24,15 +23,6 @@ public class RecordMp3Plugin implements MethodCallHandler, FlutterPlugin {
     private MethodChannel methodChannel;
     private MP3Recorder recorder;
     private RecordListener listener;
-
-    /**
-     * Plugin registration.
-     */
-    public static void registerWith(Registrar registrar) {
-        final RecordMp3Plugin plugin = new RecordMp3Plugin();
-        plugin.init(registrar.messenger());
-
-    }
 
     @Override
     public void onMethodCall(MethodCall call, Result result) {
