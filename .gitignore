@@ -98,6 +98,12 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+!.idea/runConfigurations/
+android/.idea/
+.idea/libraries/
+.idea/.gitignore
+.idea/*.xml
+.idea/caches/
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
