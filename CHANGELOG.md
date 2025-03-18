@@ -1,3 +1,6 @@
+## 1.3.0
+* Support Flutter 3.29.0 by removing old V1 plugin for Android
+
 ## 1.2.0
 * Fix mp3 build for Android
 
