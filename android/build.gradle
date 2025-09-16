@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.1'
+        classpath 'com.android.tools.build:gradle:8.12.3'
     }
 }
 
@@ -22,23 +22,53 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdk 34
     namespace 'com.plugin.record_mp3_plus'
+    compileSdk 36
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 33
+        minSdkVersion 24
+        targetSdk 36
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            // Keep x86_64 for emulator testing if you want
+            abiFilters "armeabi-v7a", "arm64-v8a", "armeabi", "mips", "mips64", "x86", "x86_64"
+        }
     }
 
     sourceSets.main {
         jni.srcDirs = [] // This prevents the auto generation of Android.mk
-        jniLibs.srcDir 'src/main/libs' // This is not necessary unless you have precompiled libraries in your project.
+        jniLibs.srcDir 'src/main/libs'
+        // This is not necessary unless you have precompiled libraries in your project.
     }
 
     lintOptions {
         disable 'InvalidPackage'
     }
+
 }
+
+afterEvaluate {
+    android.libraryVariants.all { variant ->
+        if (variant.buildType.name == "release") {
+            def variantName = variant.name.capitalize()
+            def mergeJniLibsTask = tasks.findByName("merge${variantName}JniLibFolders")
+            if (mergeJniLibsTask != null) {
+                mergeJniLibsTask.doLast {
+                    def outDir = mergeJniLibsTask.outputDir.get().asFile
+
+                    // Remove libmp3lame.so only for x86/x86_64
+                    fileTree(
+                            dir: outDir,
+                            includes: ["**/x86/**/libmp3lame.so", "**/x86_64/**/libmp3lame.so"]
+                    ).each { file ->
+                        println "Removing unwanted ABI: ${file}"
+                        file.delete()
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 dependencies {
 }
