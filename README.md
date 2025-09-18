@@ -14,6 +14,8 @@ dependencies:
 #### On Android Emulator for Android 15 with 16k support if it is intel emulator x86_64 it won't work due to the following issue
 https://github.com/amorenew/record_mp3_plus/issues/9
 
+<img src="emulators.png" alt="No support for x86_64 emulators" width="400" />
+
 ###### On iOS Simulator use Headphone to record otherwise you may not able to hear your recording
  
 ## Usage

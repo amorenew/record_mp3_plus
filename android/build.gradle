@@ -28,10 +28,6 @@ android {
         minSdkVersion 24
         targetSdk 36
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        ndk {
-            // Keep x86_64 for emulator testing if you want
-            abiFilters "armeabi-v7a", "arm64-v8a", "armeabi", "mips", "mips64", "x86", "x86_64"
-        }
     }
 
     sourceSets.main {
@@ -44,31 +40,4 @@ android {
         disable 'InvalidPackage'
     }
 
-}
-
-afterEvaluate {
-    android.libraryVariants.all { variant ->
-        if (variant.buildType.name == "release") {
-            def variantName = variant.name.capitalize()
-            def mergeJniLibsTask = tasks.findByName("merge${variantName}JniLibFolders")
-            if (mergeJniLibsTask != null) {
-                mergeJniLibsTask.doLast {
-                    def outDir = mergeJniLibsTask.outputDir.get().asFile
-
-                    // Remove libmp3lame.so only for x86/x86_64
-                    fileTree(
-                            dir: outDir,
-                            includes: ["**/x86/**/libmp3lame.so", "**/x86_64/**/libmp3lame.so"]
-                    ).each { file ->
-                        println "Removing unwanted ABI: ${file}"
-                        file.delete()
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-dependencies {
 }

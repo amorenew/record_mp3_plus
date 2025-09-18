@@ -1,3 +1,6 @@
+## 1.4.1
+* Remove Android Intel x86_64 support
+
 ## 1.4.0
 * Support 16k requirements for Android 15
 
