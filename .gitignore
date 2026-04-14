@@ -104,6 +104,7 @@ android/.idea/
 .idea/.gitignore
 .idea/*.xml
 .idea/caches/
+.cxx/
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
