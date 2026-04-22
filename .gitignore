@@ -182,3 +182,33 @@ screenshots/golden/*result.png
 
 # FVM Version Cache
 .fvm/
+
+# Pub publish: keep tracked files out of the ignored set.
+!.idea/
+.idea/*
+!.idea/codeStyles/
+!.idea/codeStyles/Project.xml
+!.idea/libraries/
+!.idea/libraries/Dart_SDK.xml
+!.idea/libraries/Flutter_Plugins.xml
+!.idea/libraries/Flutter_for_Android.xml
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/runConfigurations/
+!.idea/runConfigurations/example_lib_main_dart.xml
+!.idea/vcs.xml
+!.idea/workspace.xml
+!record_mp3.iml
+!android/gradle/wrapper/gradle-wrapper.jar
+!android/gradlew
+!android/gradlew.bat
+!example/.flutter-plugins-dependencies
+!example/ios/Podfile.lock
+!example/linux/flutter/generated_plugin_registrant.cc
+!example/linux/flutter/generated_plugin_registrant.h
+!example/linux/flutter/generated_plugins.cmake
+!example/macos/Flutter/GeneratedPluginRegistrant.swift
+!example/macos/Podfile.lock
+!example/windows/flutter/generated_plugin_registrant.cc
+!example/windows/flutter/generated_plugin_registrant.h
+!example/windows/flutter/generated_plugins.cmake

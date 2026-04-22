@@ -47,3 +47,14 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Pub publish: these files are intentionally checked in.
+!.idea/
+/.idea/*
+!.idea/codeStyles/
+!.idea/codeStyles/Project.xml
+!.idea/compiler.xml
+!.idea/encodings.xml
+!.idea/gradle.xml
+!.idea/misc.xml
+!.idea/vcs.xml
