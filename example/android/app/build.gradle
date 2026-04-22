@@ -23,6 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
+    ndkVersion = "29.0.14206865"
     compileSdk 36
 
     namespace "com.plugin.record_mp3_example"
