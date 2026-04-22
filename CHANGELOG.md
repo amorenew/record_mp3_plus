@@ -1,3 +1,9 @@
+## 1.5.0
+* Fix 16k crash for Android 15 and 16
+* Update Gradle and plugin configurations
+* Add Java toolchain support for Android builds
+* Adjust example project Flutter environment paths
+
 ## 1.4.1
 * Remove Android Intel x86_64 support
 
